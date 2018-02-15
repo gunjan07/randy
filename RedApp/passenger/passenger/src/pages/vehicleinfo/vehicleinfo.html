@@ -1,0 +1,93 @@
+<!--
+  Generated template for the VehicleinfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center> <img src="assets/img/logo_red_small.png"></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="def-bg">
+
+  <div class="auth-content">
+
+    <div class="">
+
+      <ion-list class="list-form" padding>
+
+        <ion-item>
+          <ion-label floating>Vehicle No</ion-label>
+          <ion-input type="text" [(ngModel)]="vno"></ion-input>
+        </ion-item>
+
+        <ion-item margin-vertical>
+          <ion-label>Vehicle Make</ion-label>
+          <ion-select [(ngModel)]="vmake" >
+            <ion-option value="brand1">Brand1</ion-option>
+            <ion-option value="brand2">Brand2</ion-option>
+            <ion-option value="brand3">Brand3</ion-option>
+            <ion-option value="brand4">Brand4</ion-option>
+            <ion-option value="brand5">Brand5</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item margin-vertical>
+          <ion-label>Vehicle Model</ion-label>
+          <ion-select [(ngModel)]="vmodel">
+            <ion-option value="model1">Model1</ion-option>
+            <ion-option value="model2">Model2</ion-option>
+            <ion-option value="model3">Model3</ion-option>
+            <ion-option value="model4">Model4</ion-option>
+            <ion-option value="model5">Model5</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item margin-vertical>
+          <ion-label>Year of Manufacture</ion-label>
+          <ion-select [(ngModel)]="yom">
+            <ion-option value="2017">2017</ion-option>
+            <ion-option value="2016">2016</ion-option>
+            <ion-option value="2015">2015</ion-option>
+            <ion-option value="2014">2014</ion-option>
+            <ion-option value="2013">2013</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item margin-vertical>
+          <ion-label>Tyre Size</ion-label>
+          <ion-select [(ngModel)]="tyresize">
+            <ion-option value="size1">TyreSize 1</ion-option>
+            <ion-option value="size2">TyreSize 2</ion-option>
+            <ion-option value="size3">TyreSize 3</ion-option>
+            <ion-option value="size4">TyreSize 4</ion-option>
+            <ion-option value="size5">TyreSize 5</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item margin-vertical>
+          <ion-label>Insurance company</ion-label>
+          <ion-select [(ngModel)]="inscmpy">
+            <ion-option value="ins1">Insurance 1</ion-option>
+            <ion-option value="ins2">Insurance 2</ion-option>
+            <ion-option value="ins3">Insurance 3</ion-option>
+            <ion-option value="ins4">Insurance 4</ion-option>
+            <ion-option value="ins5">Insurance 5</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <button ion-button color="primary" block (click)="saveInfo()">
+          Save
+        </button>
+      </ion-list>
+
+    </div>
+
+
+  </div>
+</ion-content>

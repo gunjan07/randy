@@ -1,0 +1,218 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class=" auth-bg">
+  <div class="auth-content">
+
+    <div class="">
+
+      <!-- Logo -->
+      <div padding text-center>
+        <div class="logo ">
+          <img src="assets/img/logo_red.png">
+        </div>
+      </div>
+
+      <!-- Login form -->
+         
+
+      <ion-list class="list-form" padding>
+         
+        <ion-item>
+          <ion-label floating>Name</ion-label>
+          <ion-input type="text" [(ngModel)]="name" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Contry Code</ion-label>
+            <ion-input type="text" [(ngModel)]="countryCode" ng-minlength="8" required></ion-input>
+          </ion-item>        
+        
+        <ion-item>
+          <ion-label floating>Phone</ion-label>
+          <ion-input type="number" [(ngModel)]="phoneNumber" ng-minlength="8" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Confirm Password</ion-label>
+          <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Vehicle No</ion-label>
+          <ion-input type="text" [(ngModel)]="vno"></ion-input>
+        </ion-item>
+
+
+        <ion-item margin-vertical>
+          <ion-label>Vehicle Make </ion-label>
+          <ion-select [(ngModel)]="vmake" >
+            <ion-option value="AUDI">AUDI</ion-option>
+            <ion-option value="BMW">BMW</ion-option>
+            <ion-option value="CHANA">CHANA</ion-option>
+            <ion-option value="CHERY">CHERY</ion-option>
+            <ion-option value="CHEVROLET">CHEVROLET</ion-option>
+           <ion-option value="CHRYSLER">CHRYSLER</ion-option>
+            <ion-option value="CITROEN">CITROEN</ion-option>
+            <ion-option value="DAEWOO">DAEWOO</ion-option>
+            <ion-option value="DAIHATSU">DAIHATSU</ion-option>
+            <ion-option value="FIAT">FIAT</ion-option>
+
+            <ion-option value="FORD">FORD</ion-option>
+            <ion-option value="FOTON">FOTON</ion-option>
+
+            
+            <ion-option value="GEELY">GEELY</ion-option>
+            <ion-option value="HONDA">HONDA</ion-option>
+            <ion-option value="HYUNDAI">HYUNDAI</ion-option>
+            <ion-option value="ISUZU">ISUZU</ion-option>
+
+
+            <ion-option value="JAGUAR">JAGUAR</ion-option>
+            <ion-option value="KIA">KIA</ion-option>
+            <ion-option value="LAND ROVER">LAND ROVER</ion-option>
+            <ion-option value="LEXUS">LEXUS</ion-option>
+            <ion-option value="MAZDA">MAZDA</ion-option>
+
+
+            <ion-option value="MERCEDES">MERCEDES</ion-option>
+            <ion-option value="MITSUBISHI">MITSUBISHI</ion-option>
+            <ion-option value="NISSAN">NISSAN</ion-option>
+            <ion-option value="OPEL">OPEL</ion-option>
+           
+
+
+            <ion-option value="PERODUA">PERODUA</ion-option>
+            <ion-option value="PEUGEOT">PEUGEOT</ion-option>
+            <ion-option value="PROTON">PROTON</ion-option>
+            <ion-option value="RENAULT">RENAULT</ion-option>
+            <ion-option value="ROVER">ROVER</ion-option>
+
+
+            <ion-option value="SAAB">SAAB</ion-option>
+            <ion-option value="SKODA">SKODA</ion-option>
+            <ion-option value="SSANGYONG">SSANGYONG</ion-option>
+            <ion-option value="SUBARU">SUBARU</ion-option>
+            <ion-option value="SUZUKI">SUZUKI</ion-option>
+
+
+            <ion-option value="TOYOTA">TOYOTA</ion-option>
+            <ion-option value="VOLKSWAGEN">VOLKSWAGEN</ion-option>
+            <ion-option value="VOLVO">VOLVO</ion-option>
+            <ion-option value="WULING">WULING</ion-option>
+          
+
+          </ion-select>
+        </ion-item>
+
+        <ion-item margin-vertical>
+          <ion-label floating>Vehicle Model</ion-label>
+          <ion-input type="text" [(ngModel)]="vmodel" required ></ion-input>
+        </ion-item>
+
+        <ion-item margin-vertical>
+          <ion-label>Year of Manufacture</ion-label>
+          <ion-select [(ngModel)]="yom">
+            <ion-option value="2017">2017</ion-option>
+            <ion-option value="2016">2016</ion-option>
+            <ion-option value="2015">2015</ion-option>
+            <ion-option value="2014">2014</ion-option>
+            <ion-option value="2013">2013</ion-option>
+            <ion-option value="2012">2012</ion-option>
+            <ion-option value="2011">2011</ion-option>
+            <ion-option value="2010">2010</ion-option>
+            <ion-option value="2009">2009</ion-option>
+            <ion-option value="2008">2008</ion-option>
+            <ion-option value="2007">2007</ion-option>
+            <ion-option value="2006">2006</ion-option>
+            <ion-option value="2005">2005</ion-option>
+            <ion-option value="2004">2004</ion-option>
+            <ion-option value="2003">2003</ion-option>
+            <ion-option value="2002">2002</ion-option>
+            <ion-option value="2001">2001</ion-option>
+            <ion-option value="2000">2000</ion-option>
+            <ion-option value="1999">1999</ion-option>
+            <ion-option value="1998">1998</ion-option>
+            <ion-option value="1997">1997</ion-option>
+            <ion-option value="1996">1996</ion-option>
+            <ion-option value="1995">1995</ion-option>
+            <ion-option value="1994">1994</ion-option>
+            <ion-option value="1993">1993</ion-option>
+            <ion-option value="1992">1992</ion-option>
+            <ion-option value="1991">1991</ion-option>
+            <ion-option value="1990">1990</ion-option>
+            <ion-option value="1989">1989</ion-option>
+            <ion-option value="1988">1988</ion-option>
+             <ion-option value="1987">1987</ion-option>
+            <ion-option value="1986">1986</ion-option>
+            <ion-option value="1985">1985</ion-option>
+            <ion-option value="1984">1984</ion-option>
+            <ion-option value="1983">1983</ion-option>
+            <ion-option value="1982">1982</ion-option>
+            <ion-option value="1981">1981</ion-option>
+            <ion-option value="1980">1980</ion-option>
+           
+          </ion-select>
+        </ion-item>
+
+        <ion-item margin-vertical>
+          <ion-label>Tyre Size</ion-label>
+          <ion-select [(ngModel)]="tyresize">
+            <ion-option value="15">15</ion-option>
+            <ion-option value="16">16</ion-option>
+            <ion-option value="17">17</ion-option>
+            <ion-option value="18">18</ion-option>
+            <ion-option value="19">19</ion-option>
+            <ion-option value="20">20</ion-option>
+            <ion-option value="21">21</ion-option>
+            <ion-option value="22">22</ion-option>
+          </ion-select>
+        </ion-item>
+
+       
+       <ion-item >
+        <ion-label floating>Insurance company</ion-label>
+        <ion-input type="text" [(ngModel)]="inscmpy"  required ></ion-input>
+      </ion-item>
+
+
+
+        <button ion-button color="primary" block (click)="signup()">
+          Create account
+        </button>
+      </ion-list>
+
+    </div>
+
+    
+    <!-- Other links -->
+    <ion-grid>
+      <ion-row>
+        <!-- <ion-col>
+          <span ion-text color="light">Forgot password?</span>
+        </ion-col> -->
+        <ion-col>
+          <span ion-text color="light">
+            Already have an account?
+            <span ion-text color="light" (click)="login()">Log in</span>
+          </span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>

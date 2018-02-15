@@ -1,0 +1,69 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content class="auth-bg">
+
+  <div class="auth-content">
+
+    <div>
+
+      <!-- Logo -->
+      <div text-center>
+        <div class="logo">
+          <img src="assets/img/logo_red.png">
+        </div>
+      </div>
+
+      <!-- Login form -->
+      <!-- <div padding text-center>
+        <p ion-text color="light">Welcome! Login to continue</p>
+        <button ion-button block color="fb-color" (click)="loginWithFacebook()">
+          <span>Sign in with Facebook</span>
+        </button>
+        <button ion-button block color="gg-color" (click)="loginWithGoogle()">
+          <span ion-text color="danger">Sign in with Google</span>
+        </button>
+      </div>
+      <div text-center>OR</div> -->
+      <ion-list class="list-form" padding>
+
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+        <button ion-button color="primary" block (click)="login()">
+          Login
+        </button>
+      </ion-list>
+
+    </div>
+    <!-- <div padding="" text-center>
+      <span ion-text color="light" (click)="forgotpwd()">Forgot password?</span>
+    </div> -->
+
+    <!-- Other links -->
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <span ion-text color="light">Forgot password?</span>
+        </ion-col>
+        <ion-col>
+          <span ion-text color="light">
+            Don’t have an account?
+            <span ion-text color="light" (click)="signup()">Register</span>
+          </span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>
