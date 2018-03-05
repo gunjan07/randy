@@ -2,11 +2,12 @@ import { Injectable } from "@angular/core";
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Storage } from "@ionic/storage";
 import { PlaceService } from "./place-service";
+import { AuthService } from "./auth-service";
 
 @Injectable()
 export class SettingService {
 
-  constructor(public db: AngularFireDatabase, public storage: Storage, public placeService: PlaceService) {
+  constructor(public db: AngularFireDatabase, public storage: Storage, public authService: AuthService, public placeService: PlaceService) {
 
   }
 

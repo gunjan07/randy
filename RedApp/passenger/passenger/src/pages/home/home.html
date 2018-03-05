@@ -45,9 +45,9 @@
           <ion-icon name="ios-create-outline" color="gray"></ion-icon>
           <span ion-text color="gray">Note</span>
         </ion-col>
-        <ion-col col-4>
+        <ion-col col-4 (click)="showPromoPopup()"  >
           <ion-icon name="ios-pricetag-outline" color="gray"></ion-icon>
-          <span ion-text color="gray">Promo</span>
+          <span ion-text color="gray" name="promoButton" >Promo</span>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -65,7 +65,7 @@
 
     <button ion-button block color="primary" [hidden]="destination" (click)="chooseDestination()">CHOOSE YOUR DESTINATION
     </button>
-    <button ion-button block color="primary" [hidden]="!destination" (click)="book()">BOOK</button>
+    <button ion-button block color="primary" [hidden]="!destination" (click)="book()" id="book" >BOOK</button>
   </div>
 </ion-content>
 

@@ -15,9 +15,9 @@
 
 <ion-content padding class="support def-bg">
   <div class="feedback-form padding">
-    <textarea name="feed_back" placeholder="Type your feedback here"></textarea>
-    <button ion-button block color="light" >SEND</button>
+    <textarea name="feed_back" [(ngModel)]="feed_back_value" placeholder="Type your feedback here"></textarea>
+    <button ion-button block color="light" (click)="sendFeedback(feed_back_value)">SEND</button>
     <div text-center>OR</div>
-    <button ion-button button block color="dark">CALL US</button>
+    <button ion-button button block color="dark" (click)="callSupport()" >CALL US</button>
   </div>
 </ion-content>

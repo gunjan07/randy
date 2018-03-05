@@ -5,6 +5,7 @@ import { PlacesPage } from '../places/places';
 import { PaymentMethodPage } from '../payment-method/payment-method';
 import { FindingPage } from "../finding/finding";
 import { UserPage } from "../user/user";
+//import { TrackingPage } from '../tracking/tracking';
 import { PlaceService } from "../../services/place-service";
 import { SettingService } from "../../services/setting-service";
 import { DriverService } from "../../services/driver-service";
@@ -51,6 +52,9 @@ export class HomePage {
   // Note to user
   note: any = '';
 
+  // Promo to user
+  promo: any = '';
+
   // Map
   map: any;
 
@@ -81,6 +85,12 @@ export class HomePage {
 
   // user tracking interval
   driverTracking: any;
+    
+  // // trip status
+  // tripStatus: any;
+
+  // // trip subscription
+  // tripSubscription: any;
 
   constructor(public nav: NavController, public platform: Platform, public alertCtrl: AlertController,
               public placeService: PlaceService, private geolocation: Geolocation, private chRef: ChangeDetectorRef,
@@ -121,6 +131,18 @@ export class HomePage {
     //this.loadMap();
     console.log("this.user");
     console.log(this.user);
+    // let tripId = this.tripService.getId();
+    // this.tripSubscription = this.tripService.getTrip(tripId).subscribe(snapshot => {
+    //   this.tripStatus = snapshot.status;
+
+    //   // if trip has been finished
+    //   if (this.tripStatus == TRIP_STATUS_FINISHED) {
+    //     console.log('FINISHED TRIP')
+    //   }else{
+    //     console.log('ONGOING TRIP');
+    //     this.nav.setRoot(TrackingPage);
+    //   }
+    // });
 
     // if (this.user.email) {
     //     this.loadMap();
@@ -290,9 +312,56 @@ console.log("choise vehicle tyep index"+index);
         }
       ]
     });
-
+    
     prompt.present();
   };
+
+  // Show note popup when click to 'Promo to user'
+  showPromoPopup() {
+    console.log('showPromoPopup');
+    
+    let prompt = this.alertCtrl.create({
+      title: 'Enter Promo Code',
+      message: "",
+      inputs: [
+        {
+          name: 'promo',
+          placeholder: 'PROMO CODE'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Apply',
+          
+          handler: data => {
+
+            if (data.promo == "10OFF"){
+              this.currentVehicle.fee = this.currentVehicle.fee - 10
+            }else if (data.promo == "5OFF"){
+              this.currentVehicle.fee = this.currentVehicle.fee - 5
+            }else if (data.promo != "5OFF" || data.promo != "10OFF"){
+              prompt.setMessage("INVALID COUPON")
+              return false
+            }else{
+              console.log('NO MATCH')
+            }
+            this.tripService.setPromo(data.promo);
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+    prompt.present();
+  };
+
+
+
 
   // go to next view when the 'Book' button is clicked
   book() {
@@ -404,7 +473,7 @@ console.log(" Result "+JSON.stringify(snapshot));
             map: this.map,
             position: latLng,
             icon: {
-              url: 'assets/img/icon/tracker_' + angle + '.png',
+              url: 'assets/img/icon/tracker' + angle + '.png',
               size: new google.maps.Size(32, 32),
               origin: new google.maps.Point(0, 0),
               anchor: new google.maps.Point(16, 16),

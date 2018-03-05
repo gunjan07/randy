@@ -14,6 +14,8 @@ import { ReportsPage } from '../pages/reports/reports';
 import { FaqPage } from '../pages/faq/faq';
 import { PromocodesPage } from '../pages/promocodes/promocodes';
 import { LoginPage } from '../pages/login/login';
+import { SupportPage } from '../pages/support/support';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -42,7 +44,8 @@ export const firebaseConfig = {
     ReportsPage,
     FaqPage,
     PromocodesPage,
-    LoginPage
+    LoginPage,
+    SupportPage
     
   ],
   imports: [
@@ -63,7 +66,8 @@ export const firebaseConfig = {
     ReportsPage,
     FaqPage,
     PromocodesPage,
-    LoginPage
+    LoginPage,
+    SupportPage
   ],
   providers: [
     StatusBar,

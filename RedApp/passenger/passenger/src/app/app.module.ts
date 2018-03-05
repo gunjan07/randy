@@ -25,6 +25,8 @@ import { SettingService } from "../services/setting-service";
 import { DealService } from "../services/deal-service";
 import { AuthService } from "../services/auth-service";
 import { FaqService } from "../services/faq-service";
+import { CallNumber } from '@ionic-native/call-number';
+import { SupportService } from "../services/support-service";
 // end import services
 
 // import pages
@@ -133,6 +135,8 @@ export const firebaseConfig = {
     DealService,
     AuthService,
     FaqService,
+    SupportService,
+    CallNumber,
     /* import services */
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ChatProvider

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, LoadingController, AlertController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
+import { ForgotpwdPage } from '../forgotpwd/forgotpwd'
 import { HomePage } from "../home/home";
 import { AuthService } from "../../services/auth-service";
 
@@ -62,5 +63,9 @@ export class RegisterPage {
 
   login() {
     this.nav.setRoot(LoginPage);
+  }
+
+  forgotpwd() {
+    this.nav.push(ForgotpwdPage);
   }
 }

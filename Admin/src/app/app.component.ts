@@ -14,6 +14,8 @@ import { ReportsPage } from '../pages/reports/reports';
 import { FaqPage } from '../pages/faq/faq';
 import { PromocodesPage } from '../pages/promocodes/promocodes';
 import { LoginPage } from '../pages/login/login';
+import { SupportPage } from '../pages/support/support';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -36,7 +38,8 @@ export class MyApp {
       { title: 'ActiveDrivers', component: ActivedriversPage },
       { title: 'Trips', component: TripsPage },
       { title: 'Reports', component: ReportsPage },
-      { title: 'FAQ', component: FaqPage }
+      { title: 'FAQ', component: FaqPage },
+      { title: 'Support', component: SupportPage }
     
     ];
 

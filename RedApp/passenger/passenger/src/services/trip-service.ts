@@ -13,6 +13,7 @@ export class TripService {
   private distance: number;
   private fee: number;
   private note: string;
+  private promo: string;
   private paymentMethod: any = 'cash';
   private vehicle: any;
   // vehicle's icon
@@ -85,6 +86,14 @@ export class TripService {
     return this.note;
   }
 
+  setPromo(promo) {
+    return this.promo = promo;
+  }
+
+  getPromo() {
+    return this.promo;
+  }
+
   setPaymentMethod(method) {
     return this.paymentMethod = method;
   }
@@ -121,7 +130,7 @@ export class TripService {
   getTrip(id) {
     return this.db.object('trips/' + id);
   }
-
+  
   getTrips() {
     let user = this.authService.getUserData();
     console.log(user);

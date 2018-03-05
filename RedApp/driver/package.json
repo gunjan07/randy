@@ -21,6 +21,7 @@
     "@angular/platform-browser": "4.4.4",
     "@angular/platform-browser-dynamic": "4.4.4",
     "@angular/tsc-wrapped": "^4.4.6",
+    "@ionic-native/call-number": "^4.5.3",
     "@ionic-native/core": "4.3.2",
     "@ionic-native/geolocation": "^4.1.0",
     "@ionic-native/launch-navigator": "^4.5.2",
@@ -31,18 +32,19 @@
     "angular2-moment": "^1.6.0",
     "angularfire2": "^4.0.0-rc.0",
     "autoprefixer": "^7.1.6",
+    "call-number": "^1.0.1",
     "cordova-android": "^6.2.3",
     "cordova-ios": "4.5.3",
     "cordova-plugin-actionsheet": "^2.3.3",
-    "cordova-plugin-add-swift-support": "^1.7.0",
+    "cordova-plugin-add-swift-support": "^1.7.1",
     "cordova-plugin-compat": "^1.2.0",
-    "cordova-plugin-device": "^1.1.4",
-    "cordova-plugin-dialogs": "^1.3.4",
+    "cordova-plugin-device": "^1.1.7",
+    "cordova-plugin-dialogs": "^2.0.1",
     "cordova-plugin-geolocation": "^2.4.3",
-    "cordova-plugin-nativegeocoder": "^2.0.4",
-    "cordova-plugin-splashscreen": "^4.0.3",
-    "cordova-plugin-statusbar": "^2.2.2",
-    "cordova-plugin-whitelist": "^1.3.1",
+    "cordova-plugin-nativegeocoder": "^2.0.5",
+    "cordova-plugin-splashscreen": "^4.1.0",
+    "cordova-plugin-statusbar": "^2.4.1",
+    "cordova-plugin-whitelist": "^1.3.3",
     "firebase": "^3.9.0",
     "ionic-angular": "3.8.0",
     "ionic-plugin-keyboard": "^2.2.1",
@@ -50,12 +52,12 @@
     "promise-polyfill": "6.0.2",
     "rxjs": "5.4.3",
     "sw-toolbox": "3.6.0",
-    "uk.co.workingedge.phonegap.plugin.launchnavigator": "^4.1.0",
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": "^4.1.3",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "3.0.1",
-    "ionic": "3.18.0",
+    "@ionic/app-scripts": "^3.1.8",
+    "ionic": "3.19.1",
     "typescript": "2.3.4"
   },
   "cordovaPlugins": [
@@ -83,7 +85,8 @@
       },
       "cordova-plugin-nativegeocoder": {
         "LOCATION_WHEN_IN_USE_DESCRIPTION": "Use geocoder service"
-      }
+      },
+      "mx.ferreyra.callnumber": {}
     },
     "platforms": [
       "android",

@@ -27,6 +27,7 @@ import { TripService } from "../services/trip-service";
 import { AuthService } from "../services/auth-service";
 import { FaqService } from "../services/faq-service";
 import { SettingService } from "../services/setting-service";
+import { CallNumber } from '@ionic-native/call-number';
 // end import services
 
 // import pages
