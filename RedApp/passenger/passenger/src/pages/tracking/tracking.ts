@@ -47,7 +47,7 @@ export class TrackingPage {
       this.trip = snapshot;
 
       this.driverService.getDriver(snapshot.driverId).take(1).subscribe(snap => {
-        console.log(snap);
+        console.log('SNAAAPP :: '+snap);
         this.driver = snap;
         this.watchTrip(tripId);
         // init map
@@ -155,7 +155,7 @@ export class TrackingPage {
         map: this.map,
         position: latLng,
         icon: {
-          url: 'assets/img/icon/tracker_' + angle + '.png',
+          url: 'assets/img/icon/tracker' + angle + '.png',
           size: new google.maps.Size(32, 32),
           origin: new google.maps.Point(0, 0),
           anchor: new google.maps.Point(16, 16),
