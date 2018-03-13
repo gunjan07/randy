@@ -33,8 +33,8 @@
     "angularfire2": "^4.0.0-rc.0",
     "autoprefixer": "^7.1.6",
     "call-number": "^1.0.1",
-    "cordova-android": "^6.2.3",
-    "cordova-ios": "4.5.3",
+    "cordova-android": "^7.0.0",
+    "cordova-ios": "^4.5.4",
     "cordova-plugin-actionsheet": "^2.3.3",
     "cordova-plugin-add-swift-support": "^1.7.1",
     "cordova-plugin-compat": "^1.2.0",
@@ -49,6 +49,7 @@
     "ionic-angular": "3.8.0",
     "ionic-plugin-keyboard": "^2.2.1",
     "ionicons": "3.0.0",
+    "mx.ferreyra.callnumber": "~0.0.2",
     "promise-polyfill": "6.0.2",
     "rxjs": "5.4.3",
     "sw-toolbox": "3.6.0",
@@ -89,8 +90,8 @@
       "mx.ferreyra.callnumber": {}
     },
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }

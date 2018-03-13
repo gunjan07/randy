@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.etechnologycentre.red" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>RED</name>
-    <description>red</description>
+    <name>Roadside Assistance</name>
+    <description>Roadside Assistance</description>
     <author email="info@etechnologycentre.com" href="http://etechnologycentre.com/">etechnologycentre</author>
     <content src="index.html" />
     <access origin="*" />
@@ -106,8 +106,4 @@
     <plugin name="cordova-universal-links-plugin" spec="^1.2.1" />
     <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
     <plugin name="phonegap-plugin-push" spec="^2.2.1" />
-    <plugin name="phonegap-plugin-push" spec="1.10.5">
-        <variable name="SENDER_ID" value="851618234949" />
-    </plugin>
-    <engine name="android" spec="6.3.0" />
 </widget>

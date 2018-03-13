@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.etechnologycentre.red" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>RED</name>
-    <description>red</description>
+    <name>Roadside Assistance</name>
+    <description>Roadside Assistance</description>
     <author email="info@etechnologycentre.com" href="http://etechnologycentre.com/">etechnologycentre</author>
     <content src="index.html" />
     <access origin="*" />

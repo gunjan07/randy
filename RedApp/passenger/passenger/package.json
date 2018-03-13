@@ -32,8 +32,8 @@
     "angularfire2": "^4.0.0-rc.0",
     "autoprefixer": "^7.1.6",
     "call-number": "^1.0.1",
-    "cordova-android": "6.3.0",
-    "cordova-ios": "4.5.4",
+    "cordova-android": "^7.0.0",
+    "cordova-ios": "^4.5.4",
     "cordova-plugin-browsertab": "^0.2.0",
     "cordova-plugin-buildinfo": "^2.0.1",
     "cordova-plugin-compat": "^1.2.0",
@@ -93,8 +93,6 @@
       "mx.ferreyra.callnumber": {},
       "phonegap-plugin-push": {}
     },
-    "platforms": [
-      "android"
-    ]
+    "platforms": []
   }
 }
